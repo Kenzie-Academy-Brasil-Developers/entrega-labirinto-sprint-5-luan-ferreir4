@@ -1,4 +1,32 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 #mainContainer{
+    width: 95vw;
+    margin: 0 auto;
+    
+}
+
+.rowStyle{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+.cellStyle{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    z-index: 0;
+}
+.wallStyle{
+    background-color: #ca3939;
+}
+.pathStyle{
+    background-color: #ffffff;
+}
+.playerStyle{
+    width: 15px;
+    height: 15px;
+    background-color: #7cabf1;
+    padding: 1.5px;
 }
