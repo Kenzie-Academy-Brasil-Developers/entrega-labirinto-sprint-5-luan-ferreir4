@@ -6,7 +6,6 @@ body{
     margin: 0 auto;
     
 }
-
 .rowStyle{
     display: flex;
     flex-wrap: wrap;
@@ -16,10 +15,12 @@ body{
     width: 18px;
     height: 18px;
     position: relative;
-    z-index: 0;
+    font-size: 0;
 }
 .wallStyle{
     background-color: #ca3939;
+
+    font-size: 0;
 }
 .pathStyle{
     background-color: #ffffff;
@@ -29,4 +30,8 @@ body{
     height: 15px;
     background-color: #7cabf1;
     padding: 1.5px;
+}
+
+.hidden{
+    display: none;
 }
