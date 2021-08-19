@@ -4,7 +4,6 @@ body{
 #mainContainer{
     width: 95vw;
     margin: 0 auto;
-    
 }
 .rowStyle{
     display: flex;
@@ -34,4 +33,9 @@ body{
 
 .hidden{
     display: none;
+}
+.successStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

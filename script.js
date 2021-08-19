@@ -5,7 +5,7 @@ const player = document.createElement("div")
 player.classList.add("playerStyle");
 player.id = 'player'
 
-
+const sucess = document.getElementById('sucessScreen');
 
 function createMaze(){
     const map = [
@@ -106,16 +106,15 @@ function moviments(event){
 }
 
 const checkOut = (div) =>{
-    const sucess = document.getElementById('sucessScreen');
-
     if(div.id === 'end'){
-        sucess.classList.remove('hidden');
+        sucess.classList.replace('hidden','successStyle');
     }
 }
 
 const resetMaze = () => {
     const start = document.getElementById('start')
     start.appendChild(player);
+    sucess.classList.replace('successStyle','hidden');
 }
 createMaze();
 document.addEventListener('keydown',moviments);
